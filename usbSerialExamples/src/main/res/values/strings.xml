@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_title">Awesome Chat</string>
+    <string name="app_name">Awesome Chat</string>
+    <string name="refreshing">Refreshing...</string>
+    <string name="textBtnRTS">RTS - Request To Send</string>
+    <string name="textBtnDTR">DTR - Data Terminal Ready</string>
+
+
+    <string name="channels">Choose a channel</string>
+
+    <string-array name="channel_array">
+        <item>CHANNEL_NONE</item>
+        <item>CHANNEL_11</item>
+        <item>CHANNEL_12</item>
+        <item>CHANNEL_13</item>
+        <item>CHANNEL_14</item>
+        <item>CHANNEL_15</item>
+        <item>CHANNEL_16</item>
+        <item>CHANNEL_17</item>
+        <item>CHANNEL_18</item>
+        <item>CHANNEL_19</item>
+        <item>CHANNEL_20</item>
+        <item>CHANNEL_21</item>
+        <item>CHANNEL_22</item>
+        <item>CHANNEL_23</item>
+        <item>CHANNEL_24</item>
+        <item>CHANNEL_25</item>
+        <item>CHANNEL_26</item>
+    </string-array>
+
+</resources>

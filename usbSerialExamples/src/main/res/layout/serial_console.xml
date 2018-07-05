@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="right"
+    android:weightSum="3">
+    <TextView
+        android:id="@+id/demoTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:text="@string/app_title"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+    <View
+        android:id="@+id/separator"
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:background="#eeeeee" />
+    <View
+        android:id="@+id/separator2"
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:layout_below="@+id/demoTitle"
+        android:background="#eeeeee" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/networkButton"
+            android:layout_width="10dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="networkInfo"
+            tools:text="No Network" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="37dp"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/reset"
+            android:layout_width="117dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:onClick="resetDevice"
+            android:text="Reset" />
+        <Button
+            android:id="@+id/coordinator"
+            android:layout_width="178dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:onClick="startCoordinator"
+            android:text="Coordinator" />
+        <Button
+            android:id="@+id/router"
+            android:layout_width="178dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:onClick="startRouter"
+            android:text="  Router  " />
+    </LinearLayout>
+    <ScrollView
+        android:id="@+id/channelScroller"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Spinner
+            android:id="@+id/channels"
+            android:layout_width="match_parent"
+            android:layout_height="146dp"
+            android:layout_weight="1"
+            android:entries="@array/channel_array"
+            android:prompt="@string/channels"
+            android:spinnerMode="dialog" />
+    </ScrollView>
+
+    <ScrollView
+        android:id="@+id/demoScroller"
+        android:layout_width="match_parent"
+        android:layout_height="309dp">
+
+        <TextView
+            android:id="@+id/consoleText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textIsSelectable="true"
+            android:typeface="monospace" />
+    </ScrollView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+        <EditText
+            android:id="@+id/sendText"
+            android:layout_width="303dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="textPersonName" />
+
+        <Button
+            android:id="@+id/sendButton"
+            android:layout_width="118dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:onClick="sendButton"
+            android:text="Send" />
+    </LinearLayout>
+
+</LinearLayout>
